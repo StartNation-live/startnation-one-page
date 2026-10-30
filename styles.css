@@ -15,10 +15,10 @@ body { margin: 0; color: var(--text); font-family: Inter, ui-sans-serif, -apple-
 a { color: inherit; }
 .wrap { width: min(1140px, calc(100% - 64px)); margin-inline: auto; }
 .hero { background: radial-gradient(circle at 85% 24%, #f4eadc 0, transparent 35%), linear-gradient(120deg, #fff 36%, #fff8ee 100%); overflow: hidden; }
-.site-header { padding-top: 27px; }
-.brand { display: inline-block; }
+.site-header { padding-top: 27px; display: flex; align-items: center; justify-content: flex-start; gap: 28px; }
+.brand { display: inline-flex; align-items: center; }
 .brand img { display: block; width: 214px; height: auto; image-rendering: auto; }
-.tagline { font-size: 16px; margin: 10px 0 0; color: var(--muted); }
+.tagline { margin: 0; font-size: 22px; line-height: 1.1; color: #000; font-weight: 500; letter-spacing: -0.04em; display: flex; align-items: center; justify-content: center; text-align: center; flex: 1; max-width: 520px; }
 .hero-grid { display: grid; grid-template-columns: 1.03fr 1fr; align-items: center; min-height: 430px; gap: 16px; padding: 24px 0 35px; }
 .hero-copy { position: relative; z-index: 1; }
 h1 { font-size: clamp(35px, 4.6vw, 59px); line-height: 1.1; letter-spacing: -1.7px; margin: 0 0 21px; font-weight: 800; }
@@ -30,10 +30,10 @@ h1 { font-size: clamp(35px, 4.6vw, 59px); line-height: 1.1; letter-spacing: -1.7
 .primary { background: var(--orange); color: #fff; }
 .primary:hover { background: var(--orange-dark); }
 .microcopy { font-size: 14px; color: var(--muted); margin: 14px 0 0; }
-.hero-art { position: relative; min-height: 380px; display: flex; align-items: center; justify-content: center; padding: 80px 15px 10px; }
+.hero-art { position: relative; min-height: 380px; display: flex; align-items: center; justify-content: center; padding: 0 15px 0; }
 .art-note { position: absolute; right: 9%; top: 0; font: italic 22px/1.1 Georgia, serif; transform: rotate(-9deg); }
 .art-note span { display: block; font-size: 38px; text-align: center; color: var(--green); }
-.laptop { position: relative; width: min(100%, 505px); transform: perspective(800px) rotateY(-7deg) rotateX(3deg); filter: drop-shadow(15px 18px 16px #715b3c35); }
+.laptop { position: relative; width: min(100%, 505px); transform: perspective(800px) rotateY(-7deg) rotateX(3deg); filter: drop-shadow(15px 18px 16px #715b3c35); margin-top: 0; }
 .screen { display: flex; gap: 9px; align-items: center; background: #f7faf7; border: 13px solid #24292a; border-radius: 15px 15px 7px 7px; padding: 21px 13px; min-height: 245px; }
 .screen-panel { flex: 1.3; min-width: 0; }
 .screen-label { display: block; font: italic 21px Georgia, serif; margin-bottom: 17px; }
@@ -48,7 +48,7 @@ h1 { font-size: clamp(35px, 4.6vw, 59px); line-height: 1.1; letter-spacing: -1.7
 .keyboard { height: 17px; margin: 0 -28px; border-radius: 0 0 45% 45%; background: linear-gradient(#a9adae, #d9dcdd 60%, #85898a); }
 .coffee { position: absolute; bottom: 2px; right: -12px; width: 77px; height: 102px; border-radius: 6px 6px 25px 25px; background: #fefbf6; box-shadow: 7px 8px 10px #0002; text-align: center; padding-top: 14px; font: italic 17px/1.25 Georgia, serif; transform: rotate(5deg); }
 .services { background: #fff; padding: 43px 0 47px; }
-.services-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
+.services-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; }
 .service { padding: 0 22px; text-align: center; border-right: 1px solid #e8e9e5; }
 .service:last-child { border-right: 0; }
 .service-icon { width: 78px; height: 78px; border-radius: 50%; display: grid; place-items: center; margin: 0 auto 18px; font-size: 37px; font-weight: 700; }
